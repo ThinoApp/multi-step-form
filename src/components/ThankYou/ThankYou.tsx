@@ -6,7 +6,10 @@ type Props = {};
 const ThankYou = (props: Props) => {
   return (
     <div className="ThankYou">
-      <img src="/assets/images/icon-thank-you.svg" alt="thank you icon" />
+      <img
+        src="/multi-step-form/assets/images/icon-thank-you.svg"
+        alt="thank you icon"
+      />
       <h2>Thank you</h2>
       <p>
         Thanks for confirming your subscription!We hope you have fun using our

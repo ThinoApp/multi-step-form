@@ -1,0 +1,21 @@
+.MainContainer {
+  @apply px-16 bg-white flex flex-col translate-y-[4rem] sm:translate-y-0;
+  flex: 0.8;
+}
+
+.btn-next {
+  @apply w-fit px-5 py-2 bg-[#174A8B] text-white text-sm font-ubuntu-md rounded-md;
+  text-shadow: 0px 0px 2px hsla(213, 96%, 18%, 0.2);
+}
+
+.btn-back {
+  @apply w-fit px-5 py-2  text-[#174A8B] text-[1rem] font-ubuntu-b rounded-md;
+  text-shadow: 0px 0px 2px hsla(213, 96%, 18%, 0.2);
+}
+
+@media screen and (max-width: 720px) {
+  .MainContainer {
+    /* @apply translate-y-[10%]; */
+    z-index: 1;
+  }
+}

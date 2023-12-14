@@ -1,0 +1,43 @@
+.Step3 {
+  @apply w-full h-full  py-10 flex flex-col;
+}
+
+.Step3-title {
+  @apply text-3xl font-ubuntu-b text-MarineBlue;
+  text-shadow: 0px 0px 2px hsla(213, 96%, 18%, 0.2);
+  font-weight: 700;
+}
+.Step3-subtitle {
+  @apply text-sm text-CoolGray font-ubuntu-md mt-2;
+}
+
+.Step3-menu {
+  @apply flex flex-col items-center w-full mt-8;
+}
+
+.Step3-menu-container {
+  @apply flex items-center justify-around w-full gap-4;
+}
+
+.Step3-menu-item {
+  @apply w-full rounded-lg p-3 flex flex-col cursor-pointer;
+  border: 1px solid hsl(229, 24%, 87%);
+}
+.Step3-menu-item.selected {
+  @apply bg-Maniolia;
+  border: 1px solid purple;
+}
+
+.Step3-menu-item:hover {
+  border: 1px solid purple;
+}
+
+.Step3-menu-item-icon {
+  @apply w-10 h-10;
+}
+
+@media screen and (max-width: 1300px) {
+  .Step3 {
+    @apply px-8;
+  }
+}

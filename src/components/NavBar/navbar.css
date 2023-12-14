@@ -1,0 +1,64 @@
+.Navbar {
+  @apply h-full rounded-sm overflow-hidden;
+  flex: 0.4;
+  background-image: url("/assets/images/bg-sidebar-desktop.svg");
+  background-size: cover;
+  color: white;
+}
+
+.Navbar-menu {
+  @apply w-full flex flex-col items-start gap-2 pt-8;
+}
+
+.Navbar-menu-item {
+  @apply flex items-center gap-4 ml-4 p-2 cursor-pointer;
+}
+
+.Navbar-menu-item.active .Navbar-menu-item--number {
+  @apply bg-lightBlue text-black border-none;
+}
+
+.Navbar-menu-item--number {
+  font-family: "UbuntuMedium";
+  font-weight: 600;
+  @apply w-7 h-7 rounded-full flex items-center justify-center;
+  border: 1px solid hsl(229, 24%, 87%);
+}
+
+.Navbar-menu-item--content-label {
+  font-family: "Ubuntu";
+  @apply text-xs text-LightGray;
+}
+
+.Navbar-menu-item--content-title {
+  font-family: UbuntuBold;
+  @apply font-medium text-sm;
+}
+
+@media screen and (max-width: 900px) {
+  .Navbar-menu-item--content {
+    @apply hidden;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .Navbar {
+    background-image: url("/assets/images/bg-sidebar-mobile.svg");
+    @apply overflow-visible w-full py-2;
+    flex: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30%;
+  }
+
+  .Navbar-menu {
+    @apply flex-row items-start justify-center;
+    padding: 0px;
+    height: 20rem;
+  }
+
+  .Navbar-menu-item--content {
+    @apply hidden;
+  }
+}

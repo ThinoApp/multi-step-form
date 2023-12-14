@@ -1,0 +1,79 @@
+.Step1 {
+  @apply w-full py-10 flex flex-col;
+}
+
+.Step1-title {
+  @apply text-3xl font-ubuntu-b text-MarineBlue;
+  text-shadow: 0px 0px 2px hsla(213, 96%, 18%, 0.2);
+  font-weight: 700;
+}
+.Step1-subtitle {
+  @apply text-sm text-CoolGray font-ubuntu-md mt-2;
+}
+
+.Step1-form {
+  @apply w-full flex-1 flex flex-col items-start gap-6 mt-5;
+}
+
+.Step1-form--item {
+  @apply w-full flex flex-col items-start gap-1;
+}
+
+.Step1-form--item .error {
+  @apply text-xs font-ubuntu text-StrawberryRed;
+  font-weight: 600;
+}
+
+.Step1-form--item label {
+  @apply font-ubuntu-md text-xs text-MarineBlue;
+  text-shadow: 0px 0px 2px hsla(213, 96%, 18%, 0.2);
+  font-weight: 500;
+}
+
+.Step1-form--item input {
+  @apply w-full px-5 py-3 rounded-md font-ubuntu-md text-MarineBlue text-sm;
+  border: 1px solid hsl(229, 24%, 87%);
+  text-shadow: 0px 0px 2px hsla(213, 96%, 18%, 0.2);
+  outline: none;
+}
+
+.Step1-form--item input.input--error {
+  @apply bg-white;
+  border: 1px solid hsl(354, 84%, 57%);
+}
+
+.Step1-form--item input.input--error:focus {
+  border: 1px solid hsl(354, 84%, 57%);
+}
+
+.Step1-form--item input:focus {
+  border-color: purple;
+  box-shadow: 0px 0px 2px hsla(213, 96%, 18%, 0.2);
+}
+
+.Step1-form--item input::placeholder {
+  text-shadow: none;
+}
+
+.Step1-form--btn {
+  @apply w-fit px-5 py-2 bg-[#174A8B] text-white text-sm font-ubuntu-md rounded-md mt-auto self-end;
+  text-shadow: 0px 0px 2px hsla(213, 96%, 18%, 0.2);
+}
+
+@media screen and (max-width: 1300px) {
+  .Step1-form {
+    @apply gap-3;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .Step1 {
+    @apply px-8;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .Step1-form--btn {
+    @apply absolute bottom-0 translate-y-[150%];
+  }
+}

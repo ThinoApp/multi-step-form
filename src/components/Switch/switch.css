@@ -1,0 +1,26 @@
+.Switch {
+  @apply w-full  px-4 py-2 flex items-center justify-center gap-4 cursor-pointer bg-Maniolia mt-8;
+}
+
+.Switch > p {
+  @apply font-ubuntu-b;
+}
+
+.Switch-toggle {
+  @apply relative flex items-center justify-start px-1 rounded-full duration-500;
+  width: 40px;
+  height: 20px;
+  background-color: hsl(213, 96%, 18%);
+}
+
+.Switch-toggle .ball {
+  transition: all 0.5s;
+  @apply block rounded-full absolute left-1;
+  width: 13px;
+  height: 13px;
+  background-color: white;
+}
+
+.Switch-toggle .ball.right {
+  @apply left-2/3 -translate-x-1;
+}
